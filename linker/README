@@ -1,0 +1,16 @@
+ABOUT:
+Implementing a two pass linker in Java. The first pass determines the base address for each module and the absolute address for each external symbol. Pass two uses the base addresses and the symbol table to generate the actual output by relocating relative addresses and resolving external references. 
+
+DETAILS:
+	-This program will accept any input from the keyboard (not input file) - details to follow. 
+	-My program will only accept inputs if the usage list is less than 500 and if the program text is also less than 500. If any input  does not comply with these guidelines, the program will produce an error message and exit.
+	-The symbol table that will be displayed on the screen will show the FINAL, CORRECTED absolute addresses, and error messages will be printed when appropriate. 
+
+
+
+HOW DOES IT WORK:
+	-The main () program will take in the input buffer, convert it into a scanner, and then call the firstPass() method upon this scanner.
+	-firstPass() will extract and save various pieces of information, such as program lines, number of uses, etc. and will also create several data structures to store this info for further processing. 
+	-After firstPass() completes, it will call resolveAddress() to act as a "second pass" to generate addresses on the memory map. It will produce the appropriate output as needed. 
+
+

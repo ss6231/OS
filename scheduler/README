@@ -1,0 +1,11 @@
+Run as:
+	-With verbose option:
+		java main --verbose inputFile
+	-Without verbose option
+		java main inputFile
+
+I have included the random numbers and input files into the compressed folder. The random numbers file is hardcoded, while the input file is a command line argument. 
+If the files are not in the same directory, if there are not enough arguments, or if the arguments are not in the order listed above, the program will print an error and exit
+
+ABOUT:
+Simulate scheduling to see how the time required depends on the scheduling algorithm (First come first served, round robin with quantum = 2, uniprogrammed, and shortest job first)
