@@ -1,7 +1,4 @@
-Name: Sana Sheikh
-NetID: ss6231
-Written in: C
-Submission components: main_fifo.c, fifo.c, main_banker.c, banker.c, struct.c, input-xx.txt
+Written in C
 
 ABOUT:
 Simulating resource allocation with an optimistic resource manager and Djikstra's banker algorithm. The optimistic manager grants requests in a FIFO manner, while the banker first checks for safe states.
